@@ -13,8 +13,6 @@ $maritalStatusEnumId = $_POST['maritalStatusEnumId'];
 $employmentStatusEnumId = $_POST['employmentStatusEnumId'];
 $OCCUPATION = $_POST['OCCUPATION'];
 
-$queryParty = "INSERT INTO `party` VALUES ('$partyId', 'PtyPerson')";
-mysqli_query($conn, $queryParty);
 
 $queryPerson = "INSERT INTO `person` VALUES('$partyId','$salutation','$firstName','$middleName','$lastName','$gender','$birthDate','$maritalStatusEnumId','$employmentStatusEnumId','$OCCUPATION')";
 mysqli_query($conn, $queryPerson);
